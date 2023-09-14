@@ -1,0 +1,532 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+  font-family: 'Prompt', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+  background-repeat: no-repeat;
+}
+body { 
+  margin: 0
+ }
+
+h1{
+  font-weight: 900;
+  margin-left: 10%;
+}
+
+h2,p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+.titleSection {
+  background-color:#010203;
+  height: 110vh;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+  border: none; 
+ 
+}
+
+.glow{
+  font-size: 70pt;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 10px gray, 0 0 15px gray, 0 0 20px gray, 0 0 25px gray, 0 0 30px gray, 0 0 35px gray, 0 0 40px gray;
+}
+
+.myPhoto {
+  height:  50em;
+  margin-top: 10%;
+  margin-right: 20px;
+  align-content: flex-end;
+}
+
+.title-div {
+  margin-top: 10%;
+  margin-right: 2%;
+  width: 35%;
+}
+
+.title {
+  color: white;
+  font-size: 60pt;
+}
+
+.short-description {
+  color: white;
+  font-size: 30pt;
+}
+.myPhoto {
+  border: none;
+  box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan, 0 0 50px cyan;
+  transition: box-shadow 0.3s ease-in-out;
+  filter: grayscale(80%);
+}
+
+@media(min-width: 1000px) {
+  .myPhoto:hover {
+    box-shadow: 0 0 10px gray, 0 0 20px gray, 0 0 30px gray, 0 0 40px gray, 0 0 50px gray;
+    filter: grayscale(25%); 
+  }
+}
+.aboutMeSection {
+  background-color: white;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+  border: none; 
+  width: 100%;
+}
+
+.secondary-title {
+  color: black;
+  font-size: 72pt;
+}
+
+.description {
+  color: black;
+  font-size: 20pt;
+  font-weight: lighter;
+}
+
+@keyframes typing {
+  from {
+      width: 5%;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+@keyframes shuffle {
+  0%, 33.33% {
+      content: "-> Web Designer";
+  }
+  33.34%, 66.67% {
+      content: "-> App Developer";
+  }
+  66.68%, 100% {
+      content: "-> Freelancer";
+  }
+}
+
+.typewriter::before {
+  content: "-> Web Designer";
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(45) infinite, shuffle 12s infinite;
+}
+
+.achievementsSection {
+  background-color: #93B1A6;
+  background-color: 	#202020;
+  height: 120vh;
+  margin: 0px;
+  border: none; 
+  width: 100%;
+}
+
+.achievemnts-title {
+  margin-top: 0px;
+  padding-top: 5%;
+  font-size: 70pt;
+  margin-bottom: 8%;
+  color: white;
+}
+
+.skillsSection {
+  background-color: #93B1A6;
+  background-color: black;
+  height: 160vh;
+  margin: 0px;
+  border: none; 
+  width: 100%;
+}
+
+.skills-title {
+  margin-top: 0px;
+  padding-top: 5%;
+  font-size: 60pt;
+  margin-bottom: 8%;
+  color: white;
+}
+
+
+.card:hover {
+  box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15px cyan, 0 0 20px cyan, 0 0 20px cyan;
+}
+
+
+.small-card:hover {
+  box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15px cyan, 0 0 20px cyan, 0 0 20px cyan;
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  
+  background-color: #080808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-image img {
+  width: 70%; 
+  height: 70%;
+  height: auto;
+  object-fit: cover;
+  
+  border-radius: 5px;
+}
+
+.card-description {
+  padding: 1em;
+  text-align: center;
+  font-size: 1.2em; 
+  color: #93B1A6; 
+  color: white;
+}
+
+.achievementsDiv {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.cardsDiv {
+  padding-left: 0em;
+  padding-right: 0em;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin-bottom: 120px;
+  gap: 3%;
+}
+.card {
+  width: 18em;
+  height: 30em;
+  background-color: #183D3D;
+  background-color: 	#101010;
+  color: #5C8374;
+
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px gray, 0 0 5px gray, 0 0 7px gray, 0 0 10px gray, 0 0 12px gray; 
+}
+
+.small-card {
+  width: 12em;
+  height: 22em;
+  flex-basis: calc(14.05%);
+  background-color: 	#101010;
+  color: #5C8374;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: 0 0 5px gray, 0 0 5px gray, 0 0 7px gray, 0 0 10px gray, 0 0 12px gray; 
+}
+
+.small-card .card-description {
+  text-align: center;
+  font-size: 1.55em;
+  padding-top: 0.3em;
+
+}
+.card-description p {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.small-card .card-image img {
+  width: 65%; 
+  height: 65%;
+  object-fit: contain;
+  padding: 0;
+}
+
+.contactSection {
+  height: 50vh;
+  background-color: white;
+
+}
+
+.contactMeTitle {
+  color: black;
+  font-size: 72pt;
+  margin-bottom: 20px;
+  text-align: center;
+  margin: 5% 0 5% 0;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  margin: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-button:hover {
+  transform: scale(1.1);
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+#phoneNumber {
+  text-align: center;
+  font-size: 2em;
+}
+
+.contactMeLink {
+  color: blue;
+  font-style: italic;
+  margin-left: 5pt;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30pt; 
+    padding: 0;
+    margin: 0; 
+  }
+  .glow {
+    font-size: 40pt;
+    padding: 0;
+    margin: 0; 
+  }
+  .title-div {
+    padding: 0;
+    margin: 0;
+    margin-top: 30pt;
+    width: 100%;
+    text-align: center;
+  }
+  .myPhoto {
+    width: 10em;
+    height: 10em;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    content: url("/images/me-crop.png");
+    box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 10px cyan, 0 0 20px cyan, 0 0 20px cyan;
+    transition: box-shadow 0.3s ease-in-out;
+    filter: grayscale(40%);
+  }
+  .titleSection {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .typewriter::before {
+    font-size: 20pt;
+    animation: typing 3s steps(45) infinite, shuffle 12s infinite;
+  }
+  .secondary-title {
+    font-size: 20pt;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 30px;
+  }
+  .skills-title {
+    font-size: 20pt;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 30px;
+  }
+  .achievemnts-title {
+    font-size: 20pt;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 30px;
+  }
+  .contactMeTitle {
+    font-size: 20pt;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .description {
+    font-size: 10pt;
+  }
+  .card {
+    width: 7em;
+    height: 10em;
+    background-color: #183D3D;
+    background-color: 	#101010;
+    color: #5C8374;
+    
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px gray, 0 0 5px gray, 0 0 7px gray, 0 0 10px gray, 0 0 12px gray; 
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 5px gray, 0 0 5px gray, 0 0 7px gray, 0 0 10px gray, 0 0 12px gray; 
+  }
+  .small-card:hover {
+    box-shadow: 0 0 5px gray, 0 0 5px gray, 0 0 7px gray, 0 0 10px gray, 0 0 12px gray; 
+  }
+  
+  .card-image {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    
+    background-color: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-image img {
+    width: 70%; 
+    height: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .card-description {
+    padding: 1em;
+    text-align: center;
+    font-size: 5pt; 
+    color: #93B1A6; 
+    color: white;
+  }
+  
+  .achievementsDiv {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .cardsDiv {
+    padding-left: 0em;
+    padding-right: 0em;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 120px;
+    gap: 10%;
+  }
+  .small-card {
+    width: 7em;
+    height: 7em;
+    flex-basis: 20%;
+    background-color: 	#101010;
+    color: #5C8374;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px gray, 0 0 5px gray, 0 0 7px gray, 0 0 10px gray, 0 0 12px gray; 
+  }
+  
+  .small-card .card-description {
+    text-align: center;
+    font-size: 6pt;
+    padding-top: 0.3em;
+  
+  }
+  .card-description p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  .small-card .card-image img {
+    width: 70%; 
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .achievementsSection {
+    height: 70vh;
+    padding-top: 50px;
+  }
+  .skillsSection {
+    height: 90vh;
+    padding-top: 50px;
+  }
+  .aboutMeSection {
+    height: 60vh;;
+    padding-top: 50px;
+  }
+  svg {
+    width: 35px;
+    height: 35px;
+  }
+  #phoneNumber {
+    font-size: 12pt;
+  }
+  .contactSection {
+    height: 40vh;
+  }
+}
+
+.fade-in {
+    opacity: 0; 
+    animation: fadeIn 2.5s ease-in-out forwards; 
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+h1 {
+    animation: slideLeftToRight 1.2s ease-in-out;
+}
+@keyframes slideLeftToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
